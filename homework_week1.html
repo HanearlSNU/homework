@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1주차 숙제!</title>
+	 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- JS -->   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<!-- 구글폰트 -->	
+	<link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+	<!-- style -->
+	<style type="text/css">
+
+		* {
+			font-family: 'Stylish', sans-serif;
+		}
+
+		.wrap {
+			width: 400px;
+			margin: 50px auto auto;
+			align-items: center;
+		}
+
+		.item {
+			width: 400px;
+			margin: auto;
+		}
+		.title {
+			font-size: 35px;
+		}
+
+		.price {
+			font-size: 16px;
+		}
+
+		.detail {
+			font-size: 14px;
+		}
+
+		.input-group-text {
+			font-size: 14px;
+		}
+
+		.price {
+			margin: auto 10px auto;
+		}	
+		
+		/* '주문하기' 버튼을 가운데 정렬하려면??? */
+		.out {
+			width: 100%;
+			text-align: center;
+		}
+
+		.orderbtn {
+			display: inline-block;
+			/* width: 50%; 있어도 되고 없어도 되고 */
+		}
+		
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<div class="wrap">
+
+		<!-- 사진 div로 묶기 -->
+		<div class="item">
+			
+			<img class="salad" src=http://theurbansub.com/wp-content/uploads/2017/07/VeggieTray_1.jpg alt="" style="width: 400px; height: auto !important;">
+		</div>
+
+		<!-- 글씨부분 전부를 explain 클래스로 묶기 -->
+		<div class="explain">
+			<p1 class="title">신선한 샐러드 한접시?</p1><p2 class="price">가격: 3,000원/개</p2><br>
+			<p3 class="detail">하나씩 찍어먹으면 꿀맛! 과자보다 맛있는 샐러드 사세욤</p3>
+		</div>
+
+		<p> 
+		</p>
+
+		<!-- 주문자 이름 -->
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1">주문자 이름</span>
+			</div>
+			<input type="text" class="form-control" placeholder="이름을 입력하세요." aria-label="Username" aria-describedby="basic-addon1">
+		</div>
+
+		<!-- 수량 -->
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">수량</label>
+			</div>
+			<select class="custom-select" id="inputGroupSelect01">
+				<option selected>--수량을 선택하세요--</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="other">직접 입력</option>
+			</select>
+		</div>
+
+			
+
+
+		<!-- 주소 -->
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1">주소</span>
+			</div>
+			<input type="text" class="form-control" placeholder="주소를 입력하세요." aria-label="Username" aria-describedby="basic-addon1">
+		</div>
+
+		<!-- 전화번호 -->
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1">전화번호</span>
+			</div>
+			<input type="text" class="form-control" placeholder="전화번호를 입력하세요." aria-label="Username" aria-describedby="basic-addon1">
+		</div>
+
+		<!-- '주문하기' 버튼 만들기 -->
+		<div class="out">
+			<div class="orderbtn">
+				<button class="btn btn-primary" type="submit">주문하기</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
